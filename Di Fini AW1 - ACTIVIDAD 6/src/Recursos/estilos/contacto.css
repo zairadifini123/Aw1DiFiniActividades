@@ -55,20 +55,14 @@ a {
     border: 2px solid #142353;
 }
 
-.pie-principal ul {
-    color: #dddcdc;
+.contenido-principal form label {
+    display: block;
+    margin-top: 10px;
 }
 
-.contenido-principal section {
-    margin-bottom: 5px;
-    padding: 10px;
-}
-
-.contenido-principal h3 {
-    margin: 8px 0 0 0;
-}
-
-.contenido-principal ul {
-    margin: 0 0 12px 0;
-    padding-left: 20px;
+.contenido-principal form input,
+.contenido-principal form select,
+.contenido-principal form textarea {
+    display: block;
+    margin-bottom: 10px;
 }
