@@ -1,0 +1,27 @@
+body{
+    background-color: #9ccee5;
+}
+
+a{
+    background-color: #96989e;
+    text-decoration:none; 
+}
+
+
+.encabezado-principal
+{   
+    background-color: #142353;
+}
+
+.contenido-principal{
+    background-color: #cfcece;
+    padding: 10px;
+}
+
+.encabezado-principal nav{
+    background-color: black;
+}
+
+.pie-principal{
+    background-color: #142353;
+}
