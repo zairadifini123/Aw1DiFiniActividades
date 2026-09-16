@@ -1,51 +1,13 @@
-@font-face {
-    font-family: Outfit;
-    src: url(./fuentes/Outfit-Regular.ttf);
-}
-
-* {
-    box-sizing: border-box;
-}
-
-html,
-body,
-h1,
-h2,
-h3,
-ul {
-    padding: 0;
-    margin: 0;
-}
-
-html {
-    font-family: Outfit, Verdana, Geneva, Tahoma, sans-serif;
-}
-
-body {
-    background-color: #b0b0b0;
-}
-
-a {
-    color: #dddcdc;
-    text-decoration: none;
-}
-
 .encabezado-principal {
     background-color: #2a3a70;
     padding: 5px 10px 20px 10px;
     border-bottom: 2px solid #0d0953;
 }
 
-.contenido-principal {
-    background-color: #cfcece;
-    padding: 10px;
-}
-
-.pie-principal {
-    background-color: #142353;
-    padding: 5px 10px 20px 10px;
-    border-bottom: 2px solid #0d0953;
-}
+.encabezado-principal img {
+    width: 100px;
+    height: 90x;
+}  
 
 .encabezado-principal nav {
     background-color: #051340;
@@ -53,6 +15,11 @@ a {
     height: 45px;
     padding: 5px;
     border: 2px solid #142353;
+}
+
+.contenido-principal {
+    background-color: #cfcece;
+    padding: 10px;
 }
 
 .contenido-principal form label {
@@ -66,3 +33,12 @@ a {
     display: block;
     margin-bottom: 10px;
 }  
+
+.pie-principal {
+    background-color: #142353;
+    padding: 5px 10px 20px 10px;
+    border-bottom: 2px solid #0d0953;
+}
+.pie-principal ul {
+    color: #dddcdc;
+}
