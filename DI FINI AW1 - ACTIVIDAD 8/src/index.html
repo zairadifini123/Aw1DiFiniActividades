@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retiro Sustentable - Catálogo</title>
+    <link rel="stylesheet" href="./recursos/css/index.css"> <!-- Se agregó un enlace a un archivo CSS externo para aplicar estilos a la página. -->
+</head>
+
+<body>
+    <!-- Se agregó un header con el título (encabezado-principal) para cumplir con la estructura básica de la página. -->
+    <header class="encabezado-principal">
+
+        <!-- Se completó el encabezado principal con un logo y un menú de navegación para mejorar la experiencia del usuario. Ademas se sacó el div genérico para que se pueda editar en css-->
+        <a href="index.html">
+            <img src="./recursos/imagenes/logo-rs.svg" alt="Logo del retiro sustentable">
+        </a>
+        <nav class="vinculos"> <!--Se agregó una clase "vinculos" para poder editarlo con css--> 
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="reservas.html">Reservas</a> <!-- Se agregó un enlace a la página de reservas -->
+                </li> 
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido-principal"> <!-- Se agregó una clase "contenido-principal" para poder editarlo con css--> 
+        <section> 
+            <h1>Catálogo de Cabañas</h1>
+            <h2>Cabañas para alquiler</h2> <!-- Se cambio a h2 ya que no se puede tener dos h1 en un mismo documento, esto mantiene la jerarquía y mejora la accesibilidad. -->
+            <p>Bienvenido a nuestro catálogo de cabañas. Explora nuestras opciones y encuentra la que mejor se adapte a tus necesidades.</p>
+        </section>
+
+        <!-- Se dividió la sección de catálogo en un contenedor con clase "catalogo" para poder editarlo con css y mantener una estructura clara y organizada. -->
+        <section> 
+            <div class="catalogo"> 
+                <article>
+                    <h3>Cabaña 1</h3> <!-- Se cambió a h3-->
+                    <img src="./recursos/imagenes/modelo1.webp" alt="foto de la cabaña 1"> <!-- Se agregó una descripción alt de cada cabaña para mejorar la presentación visual del catálogo ante usuarios con discapacidad visual. -->
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perspiciatis molestiae repellendus distinctio pariatur culpa ad at? Earum doloribus magnam nulla debitis dolorum, tempora minus autem dolorem officia, non eaque.</p>
+                    <p>Precio por dia: $100</p>  <!-- Se agregó un párrafo con el precio de cada cabaña para brindar información clara a los usuarios. -->
+
+                    <!-- Se agregó un botón de reserva a cada cabaña que redirige a la página de reservas para facilitar la acción del usuario. -->
+                    <a href="reservas.html">
+                        <button>Reservar</button>
+                    </a>
+                </article>
+                <article> 
+                    <h3>Cabaña 2</h3> 
+                    <img src="./recursos/imagenes/modelo2.webp" alt="foto de la cabaña 2"> 
+                    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perspiciatis molestiae repellendus distinctio pariatur culpa ad at? Earum doloribus magnam nulla debitis dolorum, tempora minus autem dolorem officia, non eaque.</p>
+                    <p>Precio por dia: $150</p>  
+
+                    <a href="reservas.html">
+                        <button>Reservar</button>
+                    </a>
+                </article>
+                <article>
+                    <h3>Cabaña 3</h3> 
+                    <img src="./recursos/imagenes/modelo3.webp" alt="foto de la cabaña 3"> 
+                    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perspiciatis molestiae repellendus distinctio pariatur culpa ad at? Earum doloribus magnam nulla debitis dolorum, tempora minus autem dolorem officia, non eaque.</p>
+                    <p>Precio por dia: $200</p>
+
+                    <a href="reservas.html">
+                        <button>Reservar</button>
+                    </a>
+                </article>
+                <article>
+                    <h3>Cabaña 4</h3> 
+                    <img src="./recursos/imagenes/modelo4.webp" alt="foto de la cabaña 4"> 
+                    <p>lorem ipsum dolor sit amet consectetur adipisicing elit. Quod perspiciatis molestiae repellendus distinctio pariatur culpa ad at? Earum doloribus magnam nulla debitis dolorum, tempora minus autem dolorem officia, non eaque.</p>
+                    <p>Precio por dia: $250</p>
+
+                    <a href="reservas.html">
+                        <button>Reservar</button>
+                    </a>
+                </article>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="pie-principal"> <!-- Se agregó un footer con la clase "pie-principal" para poder editarlo con css y cumplir con la estructura básica de la página. -->
+        <p>&copy; 2026 Retiro Sustentable. Todos los derechos reservados.</p>
+
+        <!-- Se agregó un enlace a WhatsApp con un icono de mensajería para facilitar la comunicación con los usuarios. El enlace se abre en una nueva pestaña y tiene un atributo aria-label para mejorar la accesibilidad. -->
+        <li class="mensajeria">
+            <a href="https://wa.me/" aria-label="Enlace a WhatsApp" target="_blank">
+                <img src="./recursos/imagenes/mensajeria.svg" alt="Icono de mensajería">
+            </a>
+        </li>
+    </footer> 
+</body>
+</html>

@@ -1,0 +1,130 @@
+@font-face {
+    font-family: 'Sora';
+    src: url(./fuentes/Sora-Regular.ttf);
+}
+
+*{
+    box-sizing: border-box;
+}
+
+/*-------SELECTORES UNIVERSALES--------*/
+
+/* Se agregó un reset de márgenes y padding para los elementos html y body, asegurando que no haya espacio adicional alrededor del contenido de la página. Esto es útil para mantener un diseño consistente y evitar problemas de espaciado no deseados en diferentes navegadores. */
+html,
+body {
+    margin: 0;
+    padding: 0;
+}
+
+/* ---------SELECTORES DE TIPO ---------*/
+/* Estos selectores de tipo se aplican a cada elemento html para establecer estilos comunes, son mas genericos que los selectores de clase*/
+
+/* html: A cada elemento se le asigna la fuente 'Sora' como fuente principal, con fuentes de respaldo como Verdana, Geneva, Tahoma y sans-serif. Esto asegura que el texto se muestre de manera consistente en diferentes navegadores y sistemas operativos. Además, se establece un tamaño de fuente base de 16px para mejorar la legibilidad del contenido. */
+html {
+    font-family: Sora, Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+}
+
+body {
+    background-color: #dfd0be;
+    color: #000000;
+}
+
+header {
+    background-color: #c6a072;
+    padding: 5px;
+}
+
+footer {
+    background-color: #c6a072;
+}
+
+/*Asegura que cualquier enlace que aparezca durante la navegación de la página web no tenga subrayado y que el color del texto sea blanco, mejorando la apariencia visual y la legibilidad de los enlaces en el sitio web. */
+a{
+    text-decoration: none;
+    color: #000000; /*Color por defecto para los enlaces, se puede cambiar a blanco si se desea un contraste mayor con el fondo marrón. */
+}
+
+/* -------SELECTORES DE CLASE -------*/
+/* Estos selectores se aplican a elementos específicos de la página web, permitiendo un control más detallado sobre su apariencia y comportamiento. Se utilizan para definir estilos únicos para ciertos componentes, como encabezados, botones y secciones de contenido. */
+/* Cada etiqueta tiene una breve descripcion del sector especifico al que pertenece, permite darle un estilo único al encabezado general de la web */
+
+/*ENCABEZADO PRINCIPAL*/
+.encabezado-principal {
+    position: sticky; /* Se queda pegado al hacer scroll */
+    top: 0px; /* Le dice a la propiedad sticky donde se tiene que pegar (En el borde superior de la pantalla */
+    z-index: 1; /* Asegura que el menú quede por encima de los textos e imágenes del catálogo y no tapado por ellos. */
+    display: flex; /* Activa el modelo de caja flexible. Transforma a sus hijos directos (el logo y el menú) en bloques inteligentes que se ajustan automáticamente al espacio disponible. */
+    flex-direction: row;  /* Coloca los elementos en una fila (de izquierda a derecha */
+    justify-content: space-between; /* Maneja la distribución del espacio en el eje horizontal. Distribuye espacio: logo a la izq, menú a la der */
+    align-items: center;  /* Maneja la alineación en el eje vertical.  */
+}
+
+.encabezado-principal img {
+    width: 120px; /* Ajusta el tamaño del logo para que se vea bien en la barra de navegación */
+    height: auto; /* Mantiene la proporción original del logo */
+}
+
+.encabezado-principal .vinculos a {
+    color: #ffffff; /* Color de los enlaces específicamente del menú de navegación, en el caso de  que haya mas enlaces se va a poner negro declarado en el selector de tipo */
+}
+
+.encabezado-principal .vinculos ul {  /*Le saca el punto del ul, se aclara que se va a usar de la clase vinculos el elemento ul*/
+    list-style: none;
+}
+
+/*CONTENEDOR PRINCIPAL*/
+.contenido-principal {
+    padding: 20px;
+}
+
+/* El .catalogo no necesita aclarar el sector padre porque es el unico elemento declarado con ese nombre */
+.catalogo {
+    display: grid; /* Activa el modelo de maquetación en dos dimensiones (filas y columnas) en este contenedor. */
+    grid-template-columns: 2fr; /* Dos columnas de igual tamaño que ocupen todo el espacio disponible */
+    gap: 20px; /* Establece una separación constante de 20 píxeles entre cada una de las tarjetas del catálogo */
+}
+
+.catalogo article {
+    padding: 15px;
+    background-color: #f7f4ef;
+}
+
+.catalogo article img {
+    width: 100%;
+}
+
+.contenido-principal .formulario{
+    padding: 20px 20%;
+}
+
+.contenido-principal .formulario form{
+    display: flex;
+    flex-direction: column; /* Hace que todos los campos y botones se apilen verticalmente uno debajo del otro */
+    gap: 5px; /* Espacio entre cada campo del formulario para mejorar la legibilidad y la experiencia del usuario al completar el formulario. */
+}
+
+.contenido-principal .formulario button{
+    height: 30px;
+    width: 100%;
+}
+
+/*PIE PRINCIPAL*/
+.pie-principal .mensajeria {
+    list-style: none;
+    position: fixed; /* Saca el elemento del flujo normal del documento y lo fija con respecto a la ventana del navegador */
+    bottom: 20px; /* coloca el elemento a una distancia exacta de 20 píxeles desde el borde inferior de la pantalla. */
+    right: 20px; /* coloca el elemento a una distancia exacta de 20 píxeles desde el borde derecho de la pantalla */
+    padding: 8px 12px;
+}
+
+.pie-principal .mensajeria img {
+    width: 30px;
+}
+
+/* --------RESPONSIVO---------- */
+@media (width > 640px) { /* Aplica las reglas internas únicamente cuando el ancho de la pantalla sea mayor a 640 píxeles */
+    .catalogo {
+        grid-template-columns: 1fr 1fr; /* Cuando la pantalla es más grande, el catálogo se organiza en dos columnas de igual tamaño, cuando sea menor a 640px entonces se organiza en una columna, lo que permite mostrar más productos al mismo tiempo y mejorar la experiencia del usuario. */
+    }
+} 

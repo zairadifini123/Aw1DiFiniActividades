@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Retiro Sustentable - Reservas</title>
+    <link rel="stylesheet" href="./recursos/css/index.css"> <!-- Se agregó un enlace a un archivo CSS externo para aplicar estilos a la página. -->
+</head>
+
+<body>
+    <!--Se agregó el mismo header que en index.html para mantener la consistencia de la navegación y la identidad visual del sitio. Esto permite a los usuarios navegar fácilmente entre las páginas y reconocer la marca del retiro sustentable.-->
+    <header class="encabezado-principal">
+        <a href="index.html">
+            <img src="./recursos/imagenes/logo-rs.svg" alt="Logo del retiro sustentable">
+        </a>
+        <nav class="vinculos">
+            <ul>
+                <li>
+                    <a href="index.html">Inicio</a>
+                </li>
+                <li>
+                    <a href="reservas.html">Reservas</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <main class="contenido-principal"> <!-- Se agregó una clase "contenido-principal" para poder editarlo con css-->
+        <h1>Reservas</h1>
+        <h2>Contactanos</h2><!-- Se cambio a h2 ya que no se puede saltear de h1 a h4, esto mantiene la jerarquía y mejora la accesibilidad. -->
+
+        <!-- Se creó un formulario de contacto para que los usuarios puedan enviar consultas sobre reservas. El formulario incluye campos para nombre, teléfono, email, fechas de reserva y comentarios. Se agregaron etiquetas y atributos requeridos para mejorar la accesibilidad y la validación de los datos ingresados por el usuario. -->
+        <section class="formulario">
+            <form action="./reservas.html" method="post">
+                <label for="id-nombre">Nombre</label>
+                <input type="text" name="nombre" id="id-nombre" required>
+
+                <label for="id-telefono">Telefono</label>
+                <input type="tel" name="telefono" id="id-telefono" required>
+
+                <label for="id-email">Email</label>
+                <input type="email" name="email" id="id-email" required>
+
+                <label for="id-fecha-desde">Fecha desde </label>
+                <input type="date" name="fecha-desde" id="id-fecha-desde" required>
+
+                <label for="id-fecha-hasta">Fecha hasta </label>
+                <input type="date" name="fecha-hasta" id="id-fecha-hasta" required>
+
+                <label for="id-comentario">Comentario</label>
+                <textarea name="comentario" id="id-comentario" required> </textarea>
+
+                <button type="reset">
+                    Limpiar
+                </button>
+                <button type="submit">
+                    Enviar consulta
+                </button>
+            </form>
+        </section>
+
+    </main>
+
+    <!--Se agregó el mismo footer que en index.html para mantener la consistencia de la navegación y la identidad visual del sitio. Esto permite a los usuarios navegar fácilmente entre las páginas y reconocer la marca del retiro sustentable.-->
+    <footer class="pie-principal">
+        <p>&copy; 2026 Retiro Sustentable. Todos los derechos reservados.</p>
+        <li class="mensajeria">
+            <a href="https://wa.me/" aria-label="Enlace a WhatsApp" target="_blank">
+                <img src="./recursos/imagenes/mensajeria.svg" alt="Icono de mensajería">
+            </a>
+        </li>
+    </footer>
+</body>
+
+</html>
