@@ -102,4 +102,4 @@ const productosStockAlto = productosIndumentaria.filter((producto) => {
     return producto.stock > 10;
 });
 
-console.log("Productos con stock mayor a 10:", productosStockAlto);
+console.log("Productos con stock mayor a 10:", productosStockAlto); 
